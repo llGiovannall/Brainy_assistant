@@ -1,9 +1,15 @@
 from fastapi import FastAPI, Request
 from pydantic import BaseModel
 from aiprovider import corrigir_redacao
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class RedacaoRequest(BaseModel):
     texto: str
