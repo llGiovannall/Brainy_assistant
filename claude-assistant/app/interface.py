@@ -10,36 +10,13 @@ redacao = st.text_area(
 
 
 if st.button("Corrigir"):
-    st.write("Corrigindo...")
-
-    if st.button("Corrigir"):
-
-         resultado = corrigir_redacao(redacao)
-
-    st.write(resultado)
-
-    st.subheader("Resultado")
-
-st.write(
-    f"Competência 1: {resultado['competencia_1']}"
-)
-
-st.write(
-    f"Competência 2: {resultado['competencia_2']}"
-)
-
-st.write(
-    f"Competência 3: {resultado['competencia_3']}"
-)
-
-st.write(
-    f"Competência 4: {resultado['competencia_4']}"
-)
-
-st.write(
-    f"Competência 5: {resultado['competencia_5']}"
-)
-
-st.write(
-    f"Nota Total: {resultado['nota_total']}"
-)
+ st.session_state.resultado = corrigir_redacao(redacao)
+if "resultado" in st.session_state:
+ r = st.session_state.resultado
+ st.subheader("Resultado")
+ st.write(f"Competência 1: {r['competencia_1']}")
+ st.write( f"Competência 2: {r['competencia_2']}")
+ st.write(f"Competência 3: {r['competencia_3']}")
+ st.write( f"Competência 4: {r['competencia_4']}")
+ st.write(f"Competência 5: {r['competencia_5']}")
+ st.write( f"Nota Total: {r['nota_total']}")
