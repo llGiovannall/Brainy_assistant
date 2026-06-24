@@ -7,7 +7,7 @@ const [redacao, setRedacao] = useState("");
  const [resultado, setResultado] = useState<any>(null);
 
     const corrigir = async () => {
-  const response = await fetch("http://127.0.0.1:8000/corrigir", {
+  const response = await fetch("srv-d8u5n14vikkc73d83t30", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
