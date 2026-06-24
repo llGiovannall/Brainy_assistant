@@ -1,7 +1,11 @@
-import Image from "next/image";
 
+"use client";
+
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-[#000D2E]">
       <main className="flex flex-1 w-full mr-auto flex-row items-end py-32 px-16 bg-white dark:bg-[#000D2E]" style={{ alignItems: "flex-end" }} >
@@ -29,8 +33,9 @@ export default function Home() {
 
        <div className="flex flex-col gap-4">
           <a className="flex h-12 items-center justify-center gap-2 rounded-full bg-foreground px-8 text-background hover:bg-[#383838] dark:hover:bg-[#ccc]"
-            href="/redacao">
+            href="/redacao" onClick={() => router.push("/redacaoPage")}>
             Redação
+         
           </a>
           <a className="flex h-12 items-center justify-center rounded-full border border-white/20 px-8 text-white hover:bg-white/10"
             href="/mural">
