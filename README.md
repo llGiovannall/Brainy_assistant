@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Brainy
+<img src="https://imgur.com/a/fSih9kS" width="200"/>
 
-## Getting Started
+Aplicação web com inteligência artificial para estudos — atualmente com corretor de redações no estilo ENEM.
 
-First, run the development server:
+Em breve: Mural com atividades e aulas de todas as matérias e roadmaps para estudar.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades
+- **Corretor de redações** — corrige redações com base nos critérios do ENEM e retorna nota por competência
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias
+- [Next.js](https://nextjs.org/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Groq](https://groq.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Render](https://render-www.onrender.com/)
+- [Uptimerobot](https://uptimerobot.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[![My Skills](https://skillicons.dev/icons?i=py,ts,nextjs&theme=light)](https://skillicons.dev)
