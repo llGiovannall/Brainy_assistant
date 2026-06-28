@@ -38,7 +38,7 @@ export default function Home() {
          
           </a>
           <a className="flex h-12 items-center justify-center rounded-full border border-white/20 px-8 text-white hover:bg-white/10"
-            href="/mural">
+            href="/mural" onClick={() => router.push("/mural")}>
             Mural
           </a>
         </div>
