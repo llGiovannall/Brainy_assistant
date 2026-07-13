@@ -3,8 +3,10 @@
 
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function WelcomeCard(){
+     const router = useRouter();
      return (
     <section className="relative overflow-hidden rounded-3xl bg-sidebar-gradient p-6 text-white">
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
@@ -14,11 +16,10 @@ export default function WelcomeCard(){
           <p className="mt-2 text-sm leading-6 text-white/90">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt.
           </p>
-          <div className="mt-4 flex items-center gap-4 rounded-2xl bg-white/10 px-4 py-3 text-sm">
-            <span className="text-2xl">28°</span>
+          <div onClick={()=> router.push("/banco_de_questoes")}className="mt-2 flex w-64 h-32 items-center gap-4 rounded-2xl bg-white/10 px-3 py-5 text-2x1"  >
             <div>
-              <div className="font-medium">Outdoor temperature</div>
-              <div className="text-white/80">Thermal sensation 28°</div>
+              <div className="font-large" >Banco de questões</div>
+             
             </div>
           </div>
         </div>
