@@ -19,7 +19,7 @@ class RedacaoRequest(BaseModel):
     texto: str
 
 def salvar_resultado(resultado):
-   with open("CAMINHO_SAIDA", "w", encoding="utf-8") as arquivo:
+   with open(CAMINHO_SAIDA, "w", encoding="utf-8") as arquivo:
         arquivo.write(str(resultado))
 print("arquivo salvo")
 
