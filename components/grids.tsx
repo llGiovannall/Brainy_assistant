@@ -5,13 +5,13 @@ import Grid from '@mui/material/Grid';
 import { useState } from 'react';
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#29418ba2',
+  backgroundColor: '#3560e0',
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  color: (theme.vars ?? theme).palette.text.secondary,
+  color: '#ffffff',
   ...theme.applyStyles('dark', {
-    backgroundColor: '#29418ba2',
+    backgroundColor:  '#3560e0',
   }),
 }));
 
