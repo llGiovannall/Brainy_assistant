@@ -118,7 +118,6 @@ clipRule="evenodd"/>
            </ProgressBar>
    
     <FullWidthGrid> Nota Total: {resultado.nota_total}</FullWidthGrid>
-<pre>{JSON.stringify(resultado, null, 2)}</pre>
     <DifferentLength secoes= {resultado} />
   <MultiSeriesRadar competencias={resultado} />
   </div>
