@@ -18,8 +18,14 @@ export default function DifferentLength({ secoes }: GridProps) {
   return (
     <LineChart
       height={200}
-      margin={{ bottom: 10 }}
-      xAxis={[{ data: ["introducao", "desenvolvimento_1", "desenvolvimento_2", "conclusao",] }]}
+      margin={{ bottom: 30, left: 40, right: 40 }}
+      xAxis={[{ data: ["introducao", "D1", "D2", "conclusao",],
+     scaleType: "point",
+      tickLabelStyle: {
+      fontSize: 9,
+    },
+
+      }]}
       yAxis={[
   {
     min: 0,
@@ -39,17 +45,18 @@ export default function DifferentLength({ secoes }: GridProps) {
         },
       ]}
     
-     sx={{
-    '& .MuiChartsAxis-tickLabel': {
-      fill: '#ffffff', // cor dos números dos eixos
-    },
-    '& .MuiChartsAxis-line': {
-      stroke: '#ffffff', // cor da linha do eixo
-    },
-    '& .MuiChartsAxis-tick': {
-      stroke: '#ffffff', // cor dos tracinhos do eixo
-    },
-  }}
-    />
+sx={{
+  '& .MuiChartsAxis-tickLabel': {
+    fill: '#ffffff',
+  },
+  '& .MuiChartsAxis-tickLabel tspan': {
+    fill: '#ffffff',
+  },
+  '& .MuiChartsAxis-line': {
+    stroke: '#ffffff',
+  },
+  '& .MuiChartsAxis-tick': {
+    stroke: '#ffffff',
+  },}} />
   );
 }
